@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$7t5p(8+!*vce^#_s-(-o)7l6mya_iqrncz$m*1as^qqk(%xaj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL = 'user_auth.User'
 
@@ -116,14 +116,13 @@ WSGI_APPLICATION = 'fundoo_notes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME'),
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': os.getenv('DATABASE_HOST'),
-        'PORT': '5432',
+        'NAME': 'fundoo_db',
+        'USER': 'ayush',
+        'PASSWORD': 'ayush',
+        'HOST': '172.31.9.246',  # PostgreSQL EC2 instance's IP
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
