@@ -117,9 +117,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fundoo_db',
-        'USER': 'ayush',
-        'PASSWORD': 'ayush',
-        'HOST': '172.31.9.246',  # PostgreSQL EC2 instance's IP
+        'USER': 'samthube',
+        'PASSWORD': 'Samadhan@123',
+        'HOST': '52.172.138.204',  # PostgreSQL EC2 instance's IP
         'PORT': '5432',  # Default PostgreSQL port
     }
 }
